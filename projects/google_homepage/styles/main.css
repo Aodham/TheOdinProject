@@ -1,0 +1,64 @@
+body {
+  font-size: 13px;
+}
+
+header {
+  height: 60px;
+}
+
+footer {
+  height: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.bar {
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
+
+#logo {
+  width: 272px;
+  height: 92px;
+  margin: 15px;
+}
+
+.button {
+  margin: 8px;
+  padding: 5px 20px;
+  background-image: linear-gradient(#f5f5f5, #f1f1f1);
+  border-radius: 4px;
+  border: 1px solid #f2f2f2;
+  color: #5F6368;
+}
+
+.button:hover {
+  color: black;
+  border: 1px solid #999;
+}
+
+.searchbuttons {
+    height: 58px;
+}
+
+header div:first-child, footer div:first-child {
+  display: inline-flex;
+  margin: 0 0 0 15px;
+}
+
+header div:last-child, footer div:last-child {
+  display: inline-flex;
+  margin: 0 15px 0 0;
+}
+
+header div a, footer div a {
+  margin: 0 10px;
+}

@@ -1,19 +1,60 @@
 /* styles.css */
 
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
+    font-family: Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+.catalogue,
+.headimg {
+    display: flex;
+    width: 100%;
+}
+
+.item,
+.headimg {
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    max-width: 640px;
 }
 
 @media all and (orientation:landscape) {
-    * {
-        background-color: green;
+    .catalogue {
+        flex-direction: row;
     }
  }
  
  @media all and (orientation:portrait) {
-    *{
-        background-color: red;
+    .catalogue{
+        flex-direction: column;
+    }
+    .item {
+        padding: 0 0 20px 0;
+    }
+
+    img {
+        height: 150px;
+        object-fit: cover;
     }
  }
